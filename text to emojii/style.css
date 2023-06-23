@@ -187,3 +187,24 @@ button img{
     font-size: 17px;
     cursor:pointer;
 }
+button span{
+    display:flex;
+    margin-right: 10px;
+}
+
+button img{
+    height: 20px;
+
+}
+
+result{
+    padding:20px;
+    border-radius: 10px;
+    font-size:18px;
+    background-color: #1c1c1c;
+    border: 1px solid #343434;
+    width: 45%;
+    display: block;
+    margin-top: 40px;
+
+}
