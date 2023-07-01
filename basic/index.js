@@ -227,3 +227,107 @@ console.log(myArr.lastIndexOf());
 
 // const newl=myArr.unshift("potter");
 // console.log(newl);
+
+
+//strings in js
+let mystring= " a harry bhai is a good boy good good";
+// console.log(mystring.length);
+// console.log(mystring.indexOf("haary"));
+// console.log(mystring.lastIndexOf("good"));
+
+// console.log(mystring.slice(1,4));
+// d = mystring.replace("harry","amit");
+// console.log(d,mystring);
+
+
+//dom manipulation
+
+let myDate = new Date();
+// console.log(myDate.getTime());
+// console.log(myDate.getFullYear());
+// console.log(myDate.getDay());
+// console.log(myDate.getMonth());
+// console.log(myDate.getHours());
+
+//dom manipulation
+let ele = document.getElementById('click');
+console.log(ele);
+
+let eleclass = document.getElementsByClassName('conatiner');
+console.log(eleclass);
+// eleclass[0].style.background = "cyan";
+
+// eleclass[0].classList.add("bg-primary");
+// eleclass[0].classList.remove("text-sucess");
+//  eleclass[0].innerHTML
+//eleclass[0].innerText;
+
+console.log(ele.innerHTML);
+console.log(ele.innerText);
+
+// console.log(eleclass[0].innerHTML);
+// console.log(eleclass[0].innerText);
+
+
+tn = document.getElementsByTagName('div');
+console.log(tn);
+
+createdElement = document.createElement('p');
+createdElement.innerText = "this is  a created paragraph";
+tn[0].appendChild(createdElement);
+
+createdElement2 = document.createElement('b');
+createdElement2.innerText = "this is  a created  bold paragraph";
+tn[0].replaceChild(createdElement2,createdElement);
+
+
+// document to querselector
+sel = document.querySelector('.container');
+console.log(sel);
+sel = document.querySelectorAll('.container');
+console.log(sel);
+// removechild(element) --> remove an element
+
+//dicument.location
+// document.title
+// document.scripts
+//document.url
+// document.images
+// documents.links
+// 
+
+// events
+function clicked() {
+  console.log('the button was clicked')
+}
+
+
+window.onload = function() {
+    
+  console.log("loaded");
+}
+
+// firstContainer.addEventListener('click', function(){
+//   console.log("Click hogya");
+// })
+
+// firstContainer.addEventListener('mouseover', function(){
+//   console.log("mouse contanier");
+// })
+
+
+// firstContainer.addEventListener('mouseout', function(){
+//   console.log("Mouse out ");
+
+// })
+let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
+firstContainer.addEventListener('mouseup', function(){
+  document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+  console.log("Mouse Up");
+})
+
+
+firstContainer.addEventListener('mousedown', function(){
+  document.querySelectorAll('.container')[1].innerHTML = "<b>We have Clicked</b>" 
+  console.log("Mouse down");
+})
