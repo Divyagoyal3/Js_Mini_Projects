@@ -320,14 +320,32 @@ window.onload = function() {
 //   console.log("Mouse out ");
 
 // })
-let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
-firstContainer.addEventListener('mouseup', function(){
-  document.querySelectorAll('.container')[1].innerHTML = prevHTML;
-  console.log("Mouse Up");
-})
+// let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
+// firstContainer.addEventListener('mouseup', function(){
+//   document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+//   console.log("Mouse Up");
+// })
 
 
-firstContainer.addEventListener('mousedown', function(){
-  document.querySelectorAll('.container')[1].innerHTML = "<b>We have Clicked</b>" 
-  console.log("Mouse down");
-})
+// firstContainer.addEventListener('mousedown', function(){
+//   document.querySelectorAll('.container')[1].innerHTML = "<b>We have Clicked</b>" 
+//   console.log("Mouse down");
+// })
+
+// ARROW FUNCTIONS
+function sum(a,b) {
+  return a+b;
+}
+
+sum2 = (a,b) =>{
+  return a-b;
+}
+
+
+
+logkaro =() =>{
+  document.querySelectorAll('.conatiner')[0].innerHTML ="<b> set interval fire </b>"
+  console.log(" I m in log")
+}
+// settimeout and setinterval
+setTimeout(logkaro,2000);
