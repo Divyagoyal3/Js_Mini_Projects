@@ -250,11 +250,11 @@ let myDate = new Date();
 // console.log(myDate.getHours());
 
 //dom manipulation
-let ele = document.getElementById('click');
-console.log(ele);
+// let ele = document.getElementById('click');
+// console.log(ele);
 
-let eleclass = document.getElementsByClassName('conatiner');
-console.log(eleclass);
+// let eleclass = document.getElementsByClassName('conatiner');
+// console.log(eleclass);
 // eleclass[0].style.background = "cyan";
 
 // eleclass[0].classList.add("bg-primary");
@@ -262,90 +262,121 @@ console.log(eleclass);
 //  eleclass[0].innerHTML
 //eleclass[0].innerText;
 
-console.log(ele.innerHTML);
-console.log(ele.innerText);
+// console.log(ele.innerHTML);
+// console.log(ele.innerText);
 
-// console.log(eleclass[0].innerHTML);
-// console.log(eleclass[0].innerText);
-
-
-tn = document.getElementsByTagName('div');
-console.log(tn);
-
-createdElement = document.createElement('p');
-createdElement.innerText = "this is  a created paragraph";
-tn[0].appendChild(createdElement);
-
-createdElement2 = document.createElement('b');
-createdElement2.innerText = "this is  a created  bold paragraph";
-tn[0].replaceChild(createdElement2,createdElement);
+// // console.log(eleclass[0].innerHTML);
+// // console.log(eleclass[0].innerText);
 
 
-// document to querselector
-sel = document.querySelector('.container');
-console.log(sel);
-sel = document.querySelectorAll('.container');
-console.log(sel);
-// removechild(element) --> remove an element
+// tn = document.getElementsByTagName('div');
+// console.log(tn);
 
-//dicument.location
-// document.title
-// document.scripts
-//document.url
-// document.images
-// documents.links
-// 
+// createdElement = document.createElement('p');
+// createdElement.innerText = "this is  a created paragraph";
+// tn[0].appendChild(createdElement);
 
-// events
-function clicked() {
-  console.log('the button was clicked')
-}
+// createdElement2 = document.createElement('b');
+// createdElement2.innerText = "this is  a created  bold paragraph";
+// tn[0].replaceChild(createdElement2,createdElement);
 
 
-window.onload = function() {
+// // document to querselector
+// sel = document.querySelector('.container');
+// console.log(sel);
+// sel = document.querySelectorAll('.container');
+// console.log(sel);
+// // removechild(element) --> remove an element
+
+// //dicument.location
+// // document.title
+// // document.scripts
+// //document.url
+// // document.images
+// // documents.links
+// // 
+
+// // events
+// function clicked() {
+//   console.log('the button was clicked')
+// }
+
+
+// window.onload = function() {
     
-  console.log("loaded");
-}
+//   console.log("loaded");
+// }
 
-// firstContainer.addEventListener('click', function(){
-//   console.log("Click hogya");
-// })
+// // firstContainer.addEventListener('click', function(){
+// //   console.log("Click hogya");
+// // })
 
-// firstContainer.addEventListener('mouseover', function(){
-//   console.log("mouse contanier");
-// })
-
-
-// firstContainer.addEventListener('mouseout', function(){
-//   console.log("Mouse out ");
-
-// })
-// let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
-// firstContainer.addEventListener('mouseup', function(){
-//   document.querySelectorAll('.container')[1].innerHTML = prevHTML;
-//   console.log("Mouse Up");
-// })
+// // firstContainer.addEventListener('mouseover', function(){
+// //   console.log("mouse contanier");
+// // })
 
 
-// firstContainer.addEventListener('mousedown', function(){
-//   document.querySelectorAll('.container')[1].innerHTML = "<b>We have Clicked</b>" 
-//   console.log("Mouse down");
-// })
+// // firstContainer.addEventListener('mouseout', function(){
+// //   console.log("Mouse out ");
 
-// ARROW FUNCTIONS
-function sum(a,b) {
-  return a+b;
-}
-
-sum2 = (a,b) =>{
-  return a-b;
-}
+// // })
+// // let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
+// // firstContainer.addEventListener('mouseup', function(){
+// //   document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+// //   console.log("Mouse Up");
+// // })
 
 
+// // firstContainer.addEventListener('mousedown', function(){
+// //   document.querySelectorAll('.container')[1].innerHTML = "<b>We have Clicked</b>" 
+// //   console.log("Mouse down");
+// // })
 
-logkaro =() =>{
-  document.querySelectorAll('.conatiner')[0].innerHTML ="<b> set interval fire </b>"
+// // ARROW FUNCTIONS
+// function sum(a,b) {
+//   return a+b;
+// }
+
+// sum2 = (a,b) =>{
+//   return a-b;
+// }
+
+
+
+logkaro = () =>{
+  document.querySelectorAll('.container')[0].innerHTML ="<b> set interval fire </b>"
   console.log(" I m in log")
 }
-// settimeout and setinterval
-setTimeout(logkaro,2000);
+// // settimeout and setinterval
+ setTimeout(logkaro,6000);
+
+
+//set interval is used to fired the interval automaticaly on ntym
+//  clr = setInterval(logkaro,2000);
+//to stop setInterval/setTimeout
+// clearInterval(clr);
+
+//localstorage
+localStorage.setItem("name","divya");
+// localStorage.clear();
+localStorage.getItem("name");
+//json is a open source (javascript objevct notation) is a lightweight dat interchange format. It is easy for human to read and write .it is easy for machine to parse and generate 
+localStorage.removeItem('name');
+localStorage.clear();
+
+//json
+obj = {name : "harry",length:1 , a:{this:'tha"t"'}}
+jso =JSON.stringify(obj);
+console.log(typeof jso);
+console.log(jso);
+
+// parsed = JSON.parse(`{name: "harry","length" :1, "a":{"this":"tha\\"t"} }`)
+// console.log(parsed);
+
+
+//ecmmascript is a standard contains all update js version
+
+
+//backticks // template literals
+a= 34;
+console.log(`variable ${a}`)
