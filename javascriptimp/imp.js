@@ -38,4 +38,4 @@ console.log(obj3);
 
 //destructing
 let{name1,class1,favlang} = obj1;
-console.log(name1,clss1,favlang);
+console.log(name1,class1,favlang);
