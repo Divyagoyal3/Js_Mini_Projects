@@ -378,5 +378,16 @@ console.log(jso);
 
 
 //backticks // template literals
-a= 34;
-console.log(`variable ${a}`)
+// a= 34;
+// console.log(`variable ${a}`)
+
+
+var z = 10;
+function buzz(){
+  console.log(z);
+  if(!z){
+    var z = 20;
+  }
+}
+buzz();
+console.log(3  ++"3");
